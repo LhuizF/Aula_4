@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Karantina:wght@700&display=swap");
+body {
+    margin: 0px;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Karantina", cursive;
+    font-size: 40px;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.box {
+    margin: 100px;
+    max-width: 500px;
+    background-color: rgba(219, 0, 0, 0.5);
+    color: white;
+    border-radius: 30px;
+    align-items: center;
+    padding: 25px;
+    font-family: "Karantina", cursive;
+    border: 3px solid black;
+    box-shadow: 8px 8px 8px 5px #000000;
+}
+.box-text {
+    padding: 5px;
+    cursor: pointer;
+    font-size: 35px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+.box-text:hover {
+    transform: scale(1.1);
+}
+
+.box-author-movie {
+    display: flex;
+    margin-top: 20px;
+    font-size: 25px;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.box-author {
+    text-align: right;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.box-author:hover {
+    transform: scale(1.1);
+}
+
+.box-movie {
+    margin-top: 15px;
+    text-align: right;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.box-movie:hover {
+    transform: scale(1.1);
+}
+.less {
+    font-size: 50px;
+}
+.less25 {
+    font-size: 80px;
+}

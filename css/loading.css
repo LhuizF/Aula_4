@@ -1,0 +1,17 @@
+.gif{
+    cursor: pointer;
+    border: 10px solid red;
+    border-top: 10px solid #ffffff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: rodar 1s infinite linear;
+}
+@keyframes rodar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
