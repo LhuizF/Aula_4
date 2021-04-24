@@ -54,6 +54,7 @@ h1 {
     text-align: right;
     cursor: pointer;
     transition: transform 0.3s;
+    font-size: 40px;
 }
 .box-author:hover {
     transform: scale(1.1);
@@ -64,14 +65,15 @@ h1 {
     text-align: right;
     cursor: pointer;
     transition: transform 0.3s;
+    font-size: 40px;
 }
 
 .box-movie:hover {
     transform: scale(1.1);
 }
-.less {
+.medium {
     font-size: 50px;
 }
-.less25 {
+.small {
     font-size: 80px;
 }

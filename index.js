@@ -28,21 +28,20 @@ async function getText() {
 };
 function next() {
     loading()
-    let lastN = numbertext
+    let lastNumber = numbertext
     numbertext = apitext[Math.floor(Math.random() * apitext.length)];
-    if (numbertext === lastN) {
+    if (numbertext === lastNumber) {
         next()
-        
     } else {
         if(numbertext.texts.length < 25){
-            text.classList.add('less25')
+            text.classList.add('small')
         }
         else{if (numbertext.texts.length < 87) {
-            text.classList.add('less')
-            text.classList.remove('less25')
+            text.classList.add('medium')
+            text.classList.remove('small')
             } else {
-            text.classList.remove('less25')
-            text.classList.remove('less')
+            text.classList.remove('small')
+            text.classList.remove('medium')
         }}
         text.textContent = numbertext.texts
         author.textContent = numbertext.author
@@ -61,13 +60,13 @@ function twittar() {
     window.open(`https://twitter.com/intent/tweet?text=${text.textContent}%0d${author.textContent}`);
 };
 function searchtext() {
-    window.open(`${google}${text.textContent}`)
+    window.open(google+text.textContent)
 };
 function searchauthor() {
-    window.open(`${google}${author.textContent}`)
+    window.open(google+author.textContent)
 };
 function searchmovie() {
-    window.open(`${google}${movie.textContent}`)
+    window.open (google + movie.textContent)
 };
 
 getText();
